@@ -10,7 +10,7 @@ export const IndexPageTemplate = ({
   image,
 }) => (
   <div className="homepage">
-    <Hero title={title} image={image} />
+    <Hero title={title} image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} />
   </div>
 )
 
