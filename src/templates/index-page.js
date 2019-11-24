@@ -2,22 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
+import Hero from '../components/Sections/Hero'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
   title,
   image,
 }) => (
-  <div>
-    {title}
-    <img src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} alt="image" />
+  <div className="homepage">
+    <Hero title={title} image={image} />
   </div>
 )
-
-IndexPageTemplate.propTypes = {
-  title: PropTypes.string,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-}
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
