@@ -5,15 +5,18 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
-  title
+  title,
+  image,
 }) => (
   <div>
     {title}
+    <img src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} alt="image" />
   </div>
 )
 
 IndexPageTemplate.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const IndexPage = ({ data }) => {
@@ -23,6 +26,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
+        image={frontmatter.image}
       />
     </Layout>
   )
@@ -43,6 +47,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
