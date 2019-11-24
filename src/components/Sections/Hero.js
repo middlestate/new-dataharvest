@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Hero = ({
-  title,
-  image,
-}) => (
+const Hero = ({ title, image }) => (
   <div className="Hero">
     <h1 className="title">{title}</h1>
     <img src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} alt="hero" />
