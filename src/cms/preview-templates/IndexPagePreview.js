@@ -8,8 +8,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
-        title={data.title}
-        image={data.image}
+        title={data.hero.title}
+        image={data.hero.image}
       />
     )
   } else {
