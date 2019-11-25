@@ -20,6 +20,6 @@ collections:
               widget: object,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label: Image, name: image, widget: image}
+                {label: Logo, name: image, widget: image}
               ]
             }
