@@ -19,7 +19,8 @@ collections:
               name: hero,
               widget: object,
               fields: [
+                {label: Background Image (mobile only), name: background_image, widget: image},
+                {label: Logo, name: image, widget: image},
                 {label: Title, name: title, widget: string},
-                {label: Logo, name: image, widget: image}
               ]
             }

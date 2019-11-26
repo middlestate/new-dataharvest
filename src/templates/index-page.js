@@ -6,11 +6,26 @@ import Hero from '../components/Sections/Hero'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
+  background_image,
   title,
   image,
 }) => (
   <div className="homepage">
-    <Hero title={title} image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} />
+    <Hero 
+      background_image={
+        !!background_image.childImageSharp ?
+          background_image.childImageSharp.fluid.src :
+          background_image
+      }
+      title={
+        title
+      } 
+      image={
+        !!image.childImageSharp ?
+          image.childImageSharp.fluid.src :
+          image
+      }
+    />
   </div>
 )
 
@@ -20,6 +35,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
+        background_image={frontmatter.hero.background_image}
         title={frontmatter.hero.title}
         image={frontmatter.hero.image}
       />
@@ -42,6 +58,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         hero {
+          background_image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           title
           image {
             childImageSharp {
