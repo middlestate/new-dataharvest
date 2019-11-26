@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Hero = ({ background_image, title, image }) => (
+const Hero = ({ background_image, title, subtitle, image }) => (
   <div className="Hero" style={{background: `url(${background_image})`}}>
     <h1 className="title">{title}</h1>
+    <h3 className="subtitle">{subtitle}</h3>
     <img src={image} alt="hero" />
   </div>
 )
@@ -11,6 +12,7 @@ const Hero = ({ background_image, title, image }) => (
 Hero.propTypes = {
   background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 

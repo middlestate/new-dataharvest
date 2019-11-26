@@ -8,6 +8,7 @@ import Layout from '../components/Layout'
 export const IndexPageTemplate = ({
   background_image,
   title,
+  subtitle,
   image,
 }) => (
   <div className="homepage">
@@ -20,6 +21,9 @@ export const IndexPageTemplate = ({
       title={
         title
       } 
+      subtitle={
+        subtitle
+      }
       image={
         !!image.childImageSharp ?
           image.childImageSharp.fluid.src :
@@ -37,6 +41,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         background_image={frontmatter.hero.background_image}
         title={frontmatter.hero.title}
+        subtitle={frontmatter.hero.subtitle}
         image={frontmatter.hero.image}
       />
     </Layout>
@@ -66,6 +71,7 @@ export const pageQuery = graphql`
             }
           }
           title
+          subtitle
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
