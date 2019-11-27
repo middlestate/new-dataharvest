@@ -10,9 +10,11 @@ const Hero = ({ background_image, title, subtitle, image }) => (
       height: '80vh'
     }
   }>
-    <img src={image} className="dataharvest-logo" alt="dataharvest_logo" />  
-    <h1 className="title">{title}</h1>
-    <h3 className="subtitle">{subtitle}</h3>
+    <img src={image} className="dataharvest-logo" alt="dataharvest_logo" />
+    <div className="title-container">
+      <h1 className="title">{title}</h1>
+      <h3 className="subtitle">{subtitle}</h3>    
+    </div>
   </section>
 )
 
