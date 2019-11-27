@@ -2,17 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Hero = ({ background_image, title, subtitle, image }) => (
-  <div className="Hero" style={
+  <section className="Hero section" style={
     {
       background: `url(${background_image})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
+      height: '80vh'
     }
   }>
     <img src={image} className="dataharvest-logo" alt="dataharvest_logo" />  
     <h1 className="title">{title}</h1>
     <h3 className="subtitle">{subtitle}</h3>
-  </div>
+  </section>
 )
 
 Hero.propTypes = {
