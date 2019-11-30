@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 const Hero = ({ background_image, title, subtitle, image }) => {
   const useWindowWidth = () => {
-    // created a Hook to measure window width    
     const [width, setWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -13,7 +12,7 @@ const Hero = ({ background_image, title, subtitle, image }) => {
         window.removeEventListener('resize', handleResize)
       }
     })
-
+    
     return width
   }
 
@@ -32,7 +31,7 @@ const Hero = ({ background_image, title, subtitle, image }) => {
       <div className="title-container">
         <h1 className="title">{title}</h1>
         <h3 className="subtitle">{subtitle}</h3>
-        <p className="subtitle">{useWindowWidth()}</p>
+        {/* <p className="subtitle">{useWindowWidth()}</p> */}
       </div>
     </section>
   )
