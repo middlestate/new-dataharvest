@@ -6,11 +6,12 @@ hero:
   subtitle: ' We are a BlockChain company that builds tools to help tell the story of the products in your life'
   title: Empowering the Producer
 affiliates:
-  images:
-    - image: /img/uc_riverside_logo.png
-    - image: /img/purechex_logo4-02-1.png
-    - image: /img/Fungible-A.png
-    - image: /img/nclouds-logo.png
-    - image: /img/gate.cli-sm.png
+  affiliate_logos:
+    images:
+      - image: /img/uc_riverside_logo.png
+      - image: /img/purechex_logo4-02-1.png
+      - image: /img/Fungible-A.png
+      - image: /img/nclouds-logo.png
+      - image: /img/gate.cli-sm.png
 ---
 

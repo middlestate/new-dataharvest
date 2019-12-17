@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Hero from '../components/Sections/Hero'
+import Affiliates from '../components/Sections/Affiliates'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
@@ -10,6 +11,7 @@ export const IndexPageTemplate = ({
   title,
   subtitle,
   image,
+  affiliate_logos,
 }) => (
   <div className="homepage">
     <Hero 
@@ -18,6 +20,7 @@ export const IndexPageTemplate = ({
       subtitle={subtitle}
       image={image}
     />
+    <Affiliates logosArray={affiliate_logos.images} />
   </div>
 )
 
@@ -31,9 +34,20 @@ const IndexPage = ({ data }) => {
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         image={frontmatter.hero.image}
+        affiliate_logos={frontmatter.affiliates.affiliate_logos}
       />
     </Layout>
   )
+}
+
+IndexPageTemplate.propTypes = {
+  background_image: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  image: PropTypes.string,
+  affiliate_logos: PropTypes.shape({
+    images: PropTypes.array,
+  })
 }
 
 IndexPage.propTypes = {
@@ -54,8 +68,18 @@ export const pageQuery = graphql`
           background_image
           title
           subtitle
-          image        
+          image
         }
+
+        affiliates {
+          affiliate_logos {
+            images {
+              image
+            }
+          }          
+        }
+
+
       }
     }
   }

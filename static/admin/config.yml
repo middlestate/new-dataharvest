@@ -29,10 +29,14 @@ collections:
             name: affiliates
             widget: object
             fields:
-              - label: Images
-                name: images
-                widget: list
-                fields:
-                  - label: Image
-                    name: image
-                    widget: image
+            - label: Affiliate_logos
+              name: affiliate_logos
+              widget: object
+              fields:
+                - label: Images
+                  name: images
+                  widget: list
+                  fields:
+                    - label: Image
+                      name: image
+                      widget: image
