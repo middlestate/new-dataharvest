@@ -13,22 +13,10 @@ export const IndexPageTemplate = ({
 }) => (
   <div className="homepage">
     <Hero 
-      background_image={
-        !!background_image.childImageSharp ?
-          background_image.childImageSharp.fluid.src :
-          background_image
-      }
-      title={
-        title
-      } 
-      subtitle={
-        subtitle
-      }
-      image={
-        !!image.childImageSharp ?
-          image.childImageSharp.fluid.src :
-          image
-      }
+      background_image={background_image}
+      title={title} 
+      subtitle={subtitle}
+      image={image}
     />
   </div>
 )
@@ -63,22 +51,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         hero {
-          background_image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          background_image
           title
           subtitle
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }          
+          image        
         }
       }
     }

@@ -28,10 +28,10 @@ class Hero extends React.Component {
 }
 
 Hero.propTypes = {
-  background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  background_image: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image: PropTypes.string,
 }
 
 export default Hero
