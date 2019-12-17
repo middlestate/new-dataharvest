@@ -25,3 +25,14 @@ collections:
                 {label: Subtitle, name: subtitle, widget: string},
               ]
             }
+          - label: Affiliates Section
+            name: affiliates
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
