@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 const Affiliates = ({ logosArray }) => {
   return (
     <div className="logo-row">
-      {logosArray.map(({ logo }, keys) => {
+      {logosArray.map(({ image }, keys) => {
         return (
           <div key={keys} className="logo-column">
-            {console.log(logo)}
-            <img src={logo} alt="affiliate_logo" />
+            {console.log(image)}
+            <img src={image} alt="affiliate_logo" />
           </div>
         )
       })}

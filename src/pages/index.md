@@ -12,6 +12,6 @@ affiliates:
       - image: /img/purechex_logo4-02-1.png
       - image: /img/Fungible-A.png
       - image: /img/nclouds-logo.png
-      - image: /img/gate.cli-sm.png
+      - image: /img/gate-cl-sm.png
 ---
 
