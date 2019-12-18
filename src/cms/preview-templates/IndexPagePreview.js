@@ -5,7 +5,7 @@ import { IndexPageTemplate } from '../../templates/index-page'
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
-  const entryLogos = entry.getIn(['data', 'affiliate_logos', 'images'])
+  const entryLogos = entry.getIn(['data', 'affiliates', 'affiliate_logos', 'images'])
   const logos = entryLogos ? entryLogos.toJS() : []
 
   if (data) {
