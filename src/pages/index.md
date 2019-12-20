@@ -12,5 +12,9 @@ affiliate_logos:
     - image: /img/Fungible-A.png
     - image: /img/nclouds-logo.png
     - image: /img/gate-cl-sm.png
+mission:
+  title: Our Mission
+  statement: Solving problems in the global supply chain through data management and  distributed ledger technologies.
+  image: /img/LOck.png
 ---
 

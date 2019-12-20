@@ -36,3 +36,13 @@ collections:
               - label: Image
                 name: image
                 widget: image
+          - {
+              label: Mission Section,
+              name: mission,
+              widget: object,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Mission Statement, name: statement, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+            }
