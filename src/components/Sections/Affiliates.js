@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Affiliates = ({ logosArray }) => {
+const Affiliates = ({ gridItems }) => {
   return (
     <div className="logo-row">
-      {logosArray.map(({ image }, keys) => {
+      {gridItems.map(({ image }, keys) => {
         return (
           <div key={keys} className="logo-column">
             {console.log(image)}

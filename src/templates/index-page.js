@@ -6,13 +6,7 @@ import Hero from '../components/Sections/Hero'
 import Affiliates from '../components/Sections/Affiliates'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({
-  background_image,
-  title,
-  subtitle,
-  image,
-  affiliate_logos,
-}) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos }) => (
   <div className="homepage">
     <Hero 
       background_image={background_image}
@@ -20,7 +14,7 @@ export const IndexPageTemplate = ({
       subtitle={subtitle}
       image={image}
     />
-    <Affiliates logosArray={affiliate_logos.images} />
+    <Affiliates gridItems={affiliate_logos.images} />
   </div>
 )
 
