@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         image={frontmatter.hero.image}
-        affiliate_logos={frontmatter.affiliates.affiliate_logos}
+        affiliate_logos={frontmatter.affiliate_logos}
       />
     </Layout>
   )
@@ -71,12 +71,10 @@ export const pageQuery = graphql`
           image
         }
 
-        affiliates {
-          affiliate_logos {
-            images {
-              image
-            }
-          }          
+        affiliate_logos {
+          images {
+            image
+          }
         }
 
 
