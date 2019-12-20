@@ -25,10 +25,6 @@ collections:
                 {label: Subtitle, name: subtitle, widget: string},
               ]
             }
-          # - label: Affiliates Section
-          #   name: affiliates
-          #   widget: object
-          #   fields:
           - label: Affiliate_logos
             name: affiliate_logos
             widget: object
