@@ -13,7 +13,7 @@ class Hero extends React.Component {
           background: `url(${this.props.background_image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
-          height: '80vh'
+          height: '100vh'
         }
       }>
         <img src={this.props.image} className="dataharvest-logo" alt="dataharvest_logo" />
