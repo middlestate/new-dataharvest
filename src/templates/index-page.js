@@ -5,13 +5,14 @@ import { graphql } from 'gatsby'
 import Hero from '../components/Sections/Hero'
 import Affiliates from '../components/Sections/Affiliates'
 import Mission from '../components/Sections/Mission'
+import CurrentProjects from '../components/Sections/CurrentProjects'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link }) => (
   <div className="homepage">
     <Hero 
       background_image={background_image}
-      title={title} 
+      title={title}
       subtitle={subtitle}
       image={image}
     />
@@ -20,6 +21,17 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       title={mission_title}
       statement={mission_statement}
       image={mission_image}
+    />
+    <CurrentProjects
+      subtitle={current_projects_subtitle}
+      title={current_projects_title}
+      side_image={side_image}
+      logo={spotlight_logo}
+      spotlight_title={spotlight_title}
+      spotlight_subtitle={spotlight_subtitle}
+      description={spotlight_description}
+      button_text={spotlight_button_text}
+      button_link={spotlight_button_link}
     />
   </div>
 )
@@ -38,6 +50,15 @@ const IndexPage = ({ data }) => {
         mission_title={frontmatter.mission.title}
         mission_statement={frontmatter.mission.statement}
         mission_image={frontmatter.mission.image}
+        current_projects_subtitle={frontmatter.current_projects.subtitle}
+        current_projects_title={frontmatter.current_projects.title}
+        side_image={frontmatter.current_projects.spotlight_project.side_image}
+        spotlight_logo={frontmatter.current_projects.spotlight_project.logo}
+        spotlight_title={frontmatter.current_projects.spotlight_project.title}
+        spotlight_subtitle={frontmatter.current_projects.spotlight_project.subtitle}
+        spotlight_description={frontmatter.current_projects.spotlight_project.description}
+        spotlight_button_text={frontmatter.current_projects.spotlight_project.spotlight_button_text}
+        spotlight_button_link={frontmatter.current_projects.spotlight_project.spotlight_button_link}
       />
     </Layout>
   )
@@ -53,7 +74,16 @@ IndexPageTemplate.propTypes = {
   }),
   mission_title: PropTypes.string,
   mission_statement: PropTypes.string,
-  mission_image: PropTypes.string
+  mission_image: PropTypes.string,
+  current_projects_subtitle: PropTypes.string,
+  current_projects_title: PropTypes.string,
+  side_image: PropTypes.string,
+  spotlight_logo: PropTypes.string,
+  spotlight_title: PropTypes.string,
+  spotlight_subtitle: PropTypes.string,
+  spotlight_description: PropTypes.string,
+  spotlight_button_text: PropTypes.string,
+  spotlight_button_link: PropTypes.string
 }
 
 IndexPage.propTypes = {
@@ -87,6 +117,22 @@ export const pageQuery = graphql`
           title
           statement
           image
+        }
+
+        current_projects {
+          subtitle
+          title
+
+          spotlight_project {
+            side_image
+            logo
+            title
+            subtitle
+            description
+            button_text
+            button_link
+          }
+
         }
 
 

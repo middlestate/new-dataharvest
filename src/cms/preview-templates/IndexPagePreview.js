@@ -18,6 +18,15 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         mission_title={data.mission.title}
         mission_statement={data.mission.statement}
         mission_image={data.mission.image}
+        current_projects_subtitle={data.current_projects.subtitle}
+        current_projects_title={data.current_projects.title}
+        side_image={data.current_projects.spotlight_project.side_image}
+        spotlight_logo={data.current_projects.spotlight_project.logo}
+        spotlight_title={data.current_projects.spotlight_project.title}
+        spotlight_subtitle={data.current_projects.spotlight_project.subtitle}
+        spotlight_description={data.current_projects.spotlight_project.description}
+        spotlight_button_text={data.current_projects.spotlight_project.button_text}
+        spotlight_button_link={data.current_projects.spotlight_project.button_link}
       />
     )
   } else {
