@@ -46,3 +46,26 @@ collections:
                 {label: Image, name: image, widget: image}
               ]
             }
+          - {
+              label: Current Projects Section,
+              name: current_projects,
+              widget: object,
+              fields: [
+                {label: Subtitle, name: subtitle, widget: string},
+                {label: Title, name: title, widget: string},
+                {
+                  label: Spotlight Project,
+                  name: spotlight_project,
+                  widget: object,
+                  fields: [
+                    {label: Side Image, name: side_image, widget: image},
+                    {label: Project Logo, name: logo, widget: image},
+                    {label: Title, name: title, widget: string},
+                    {label: Subtitle, name: subtitle, widget: string},
+                    {label: Description, name: description, widget: text},
+                    {label: Button Text, name: button_text, widget: string},
+                    {label: Button Link, name: button_link, widget: string}
+                  ]
+                },
+              ]
+            }
