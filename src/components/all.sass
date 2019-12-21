@@ -62,15 +62,12 @@
 .mission
   align-items: center
   .column-1
-    width: 50%
     .title, .statement
       color: #73777f
-      font-size: 26px
       font-family: Montserrat, sans-serif
     .title
       font-weight: bolder
   .column-2
-    width: 50%
     img
       max-width: 50%
       display: block
@@ -106,17 +103,18 @@
     max-width: 100%
     padding: 5%
     img
-      padding: 2%
+      padding: 5px
 
   .mission
     width: 95%
     margin: 5%
-    .column-1
-      width: 40%
-    .column-2
-      width: 40%
     .column-1, .column-2
+      width: 100%
       margin: 0 auto
+      padding: 5%
+    .column-1
+      .title, .statement
+        font-size: 21px
 
 @media only screen and (min-width: 768px)
   .dataharvest-logo
@@ -126,6 +124,11 @@
     display: flex
     max-width: 100%
     margin: 5% 15% 5% 15%
+    .column-1, .column-2
+      width: 50%
+    .column-1
+      .title, .statement
+        font-size: 26px
 
 @media only screen and (min-width: 1024px)
   .Hero
