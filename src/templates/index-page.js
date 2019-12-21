@@ -4,9 +4,10 @@ import { graphql } from 'gatsby'
 
 import Hero from '../components/Sections/Hero'
 import Affiliates from '../components/Sections/Affiliates'
+import Mission from '../components/Sections/Mission'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image }) => (
   <div className="homepage">
     <Hero 
       background_image={background_image}
@@ -15,6 +16,11 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       image={image}
     />
     <Affiliates gridItems={affiliate_logos.images} />
+    <Mission
+      title={mission_title}
+      statement={mission_statement}
+      image={mission_image}
+    />
   </div>
 )
 
@@ -29,6 +35,9 @@ const IndexPage = ({ data }) => {
         subtitle={frontmatter.hero.subtitle}
         image={frontmatter.hero.image}
         affiliate_logos={frontmatter.affiliate_logos}
+        mission_title={frontmatter.mission.title}
+        mission_statement={frontmatter.mission.statement}
+        mission_image={frontmatter.mission.image}
       />
     </Layout>
   )
@@ -41,7 +50,10 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.string,
   affiliate_logos: PropTypes.shape({
     images: PropTypes.array,
-  })
+  }),
+  mission_title: PropTypes.string,
+  mission_statement: PropTypes.string,
+  mission_image: PropTypes.string
 }
 
 IndexPage.propTypes = {
@@ -69,6 +81,12 @@ export const pageQuery = graphql`
           images {
             image
           }
+        }
+
+        mission {
+          title
+          statement
+          image
         }
 
 

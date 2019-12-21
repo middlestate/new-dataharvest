@@ -15,6 +15,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         subtitle={data.hero.subtitle}
         image={data.hero.image}
         affiliate_logos={{ images }}
+        mission_title={data.mission.title}
+        mission_statement={data.mission.statement}
+        mission_image={data.mission.image}
       />
     )
   } else {
