@@ -27,5 +27,6 @@ current_projects:
     description: We are telling the story of the grower and the producers. Capturing the story of the product told by the people that make it. Attaching that story to the products and allowing people to add to the richness of that story. DataHarvest, along with our partners have developed a smart label that uniquely pairs blockchain with the food chain. Our open and ground up approach provides an important option for those looking to use blockchain in their business.
     button_text: Talk to Us!
     button_link: https://mdst.typeform.com/to/SENQ20
+  banner_text: Helping suppliers manage their second most valuable asset… their data!
 ---
 

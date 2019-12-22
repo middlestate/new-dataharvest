@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const CurrentProjects = ({ title, subtitle, side_image, logo, spotlight_title, spotlight_subtitle, description, button_text, button_link }) => (
+const CurrentProjects = ({ title, subtitle, side_image, logo, spotlight_title, spotlight_subtitle, description, button_text, button_link, banner_text }) => (
   <div className="current_projects">
     <h3 className="subtitle">{subtitle}</h3>
     <h1 className="title">{title}</h1>
@@ -20,6 +20,7 @@ const CurrentProjects = ({ title, subtitle, side_image, logo, spotlight_title, s
         </a>
       </div>
     </div>
+    <h1 className="banner_text">{banner_text}</h1>
   </div>
 )
 
@@ -32,7 +33,8 @@ CurrentProjects.propTypes = {
   spotlight_subtitle: PropTypes.string,
   description: PropTypes.string,
   button_link: PropTypes.string,
-  button_text: PropTypes.string
+  button_text: PropTypes.string,
+  banner_text: PropTypes.string,
 }
 
 export default CurrentProjects

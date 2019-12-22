@@ -67,5 +67,6 @@ collections:
                     {label: Button Link, name: button_link, widget: string}
                   ]
                 },
+                {label: Banner Text, name: banner_text, widget: string}
               ]
             }

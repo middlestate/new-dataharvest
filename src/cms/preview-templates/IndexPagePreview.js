@@ -27,6 +27,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         spotlight_description={data.current_projects.spotlight_project.description}
         spotlight_button_text={data.current_projects.spotlight_project.button_text}
         spotlight_button_link={data.current_projects.spotlight_project.button_link}
+        banner_text={data.current_projects.banner_text}
       />
     )
   } else {

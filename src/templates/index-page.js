@@ -8,7 +8,7 @@ import Mission from '../components/Sections/Mission'
 import CurrentProjects from '../components/Sections/CurrentProjects'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text }) => (
   <div className="homepage">
     <Hero 
       background_image={background_image}
@@ -32,6 +32,7 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       description={spotlight_description}
       button_text={spotlight_button_text}
       button_link={spotlight_button_link}
+      banner_text={banner_text}
     />
   </div>
 )
@@ -59,6 +60,7 @@ const IndexPage = ({ data }) => {
         spotlight_description={frontmatter.current_projects.spotlight_project.description}
         spotlight_button_text={frontmatter.current_projects.spotlight_project.button_text}
         spotlight_button_link={frontmatter.current_projects.spotlight_project.button_link}
+        banner_text={frontmatter.current_projects.banner_text}
       />
     </Layout>
   )
@@ -83,7 +85,8 @@ IndexPageTemplate.propTypes = {
   spotlight_subtitle: PropTypes.string,
   spotlight_description: PropTypes.string,
   spotlight_button_text: PropTypes.string,
-  spotlight_button_link: PropTypes.string
+  spotlight_button_link: PropTypes.string,
+  banner_text: PropTypes.string,
 }
 
 IndexPage.propTypes = {
@@ -132,6 +135,8 @@ export const pageQuery = graphql`
             button_text
             button_link
           }
+
+          banner_text
 
         }
 
