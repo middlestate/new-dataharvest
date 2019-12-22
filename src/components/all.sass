@@ -88,9 +88,7 @@
   .title
     color: #191b21
     font-family: Montserrat, sans-serif
-    font-size: 50px
     text-transform: uppercase
-    margin-left: 5%
 .spotlight_project
   width: 80%
   height: auto
@@ -173,6 +171,19 @@
     margin-left: 0
     margin-top: 5% !important
 
+  .current_projects
+    .title
+      font-size: 40px
+    .spotlight_project
+      width: 100%
+      .column-1, .column-2
+        width: 100%
+      .column-2
+        .spotlight_title
+          width: 100%
+
+
+
 @media only screen and (min-width: 425px)
   .Hero
     padding-bottom: 20%
@@ -211,9 +222,17 @@
       .title, .statement
         font-size: 26px
 
-  .spotlight_project
-    display: flex
-    margin: 0 auto
+  .current_projects
+    .title
+      font-size: 40px
+      margin-left: 5%
+    .spotlight_project
+      display: flex
+      margin: 0 auto
+      width: 100%
+      .column-1, .column-2
+        width: 100%
+
 
 @media only screen and (min-width: 1024px)
   .Hero
