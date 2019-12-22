@@ -6,23 +6,14 @@ const CurrentProjects = ({ title, subtitle, side_image, logo, spotlight_title, s
     <h3 className="subtitle">{subtitle}</h3>
     <h1 className="title">{title}</h1>
     <div className="spotlight_project">
-      <div className="column-1"
-        style={
-          {
-            height: '100%',
-            width: '100%',
-            backgroundImage: `url(${side_image})`,
-            backgroundRepeat: 'none',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }
-        }
-      />
+      <div className="column-1">
+        <img src={side_image} alt="side_image" />
+      </div>
       <div className="column-2">
         <img src={logo} alt="logo" />
-        <h4 className="title">{spotlight_title}</h4>
+        <h4 className="spotlight_title">{spotlight_title}</h4>
         <hr/>
-        <h4 className="subtitle">{spotlight_subtitle}</h4>
+        <h4 className="spotlight_subtitle">{spotlight_subtitle}</h4>
         <p className="description">{description}</p>
         <a href={button_link}>
           <button>{button_text}</button>

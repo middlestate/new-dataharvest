@@ -57,8 +57,8 @@ const IndexPage = ({ data }) => {
         spotlight_title={frontmatter.current_projects.spotlight_project.title}
         spotlight_subtitle={frontmatter.current_projects.spotlight_project.subtitle}
         spotlight_description={frontmatter.current_projects.spotlight_project.description}
-        spotlight_button_text={frontmatter.current_projects.spotlight_project.spotlight_button_text}
-        spotlight_button_link={frontmatter.current_projects.spotlight_project.spotlight_button_link}
+        spotlight_button_text={frontmatter.current_projects.spotlight_project.button_text}
+        spotlight_button_link={frontmatter.current_projects.spotlight_project.button_link}
       />
     </Layout>
   )

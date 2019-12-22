@@ -73,6 +73,87 @@
       margin: auto
       padding: 5%
 
+/* Current Projects Section */
+.current_projects
+  background-color: lightgray
+  padding-bottom: 5%
+  .subtitle, .title
+    text-align: center
+  .subtitle
+    color: #73777f
+    font-family: Montserrat, sans-serif
+    font-size: 18px
+    text-transform: uppercase
+    padding: 5% 5% 0 5%
+  .title
+    color: #191b21
+    font-family: Montserrat, sans-serif
+    font-size: 50px
+    text-transform: uppercase
+    margin-left: 5%
+.spotlight_project
+  width: 80%
+  height: auto
+  .column-1
+    width: 45%
+    img
+      height: 100%
+      width: -webkit-fill-available
+  .column-2
+    width: 55%
+    padding: 30px
+    background-color: rgba(55, 56, 59, 0.85)
+    background-image: linear-gradient(90deg, rgba(55, 56, 59, 0.85) 0%, rgba(72, 74, 78, 0.85) 11%)
+    img
+      display: block
+      margin: auto
+    .spotlight_title, .spotlight_subtitle
+      text-align: center
+      padding: 30px 0 30px 0
+    .spotlight_title
+      color: #191b21
+      font-size: 17px
+      font-weight: bolder
+      font-family: Montserrat, sans-serif
+      text-transform: uppercase
+      width: 70%
+      margin: 0 auto
+    hr
+      margin: 0 auto
+      width: 60px
+    .spotlight_subtitle
+      color: #ffffff
+      font-size: 16px
+      font-family: Montserrat, sans-serif
+    .description
+      color: #ffffff
+      font-size: 16px
+      font-family: "Noto Serif", serif
+      margin-bottom: 5%
+    button
+      display: block
+      margin: 0 auto
+      background-color: rgba(120, 162, 124, 1)
+      color: #ffffff
+      padding: 11px 26px
+      font-family: Montserrat, sans-serif
+      font-weight: 600
+      font-size: 12px
+      line-height: 1.8
+      letter-spacing: 3px
+      text-transform: uppercase
+      border: transparent
+      border-radius: 2px
+
+
+
+
+
+
+
+
+
+
 
 
 /* media queries */
@@ -128,6 +209,10 @@
     .column-1
       .title, .statement
         font-size: 26px
+
+  .spotlight_project
+    display: flex
+    margin: 0 auto
 
 @media only screen and (min-width: 1024px)
   .Hero
