@@ -28,11 +28,10 @@ current_projects:
     button_text: Talk to Us!
     button_link: https://mdst.typeform.com/to/SENQ20
   banner_text: Helping suppliers manage their second most valuable asset… their data!
-past_projects_section:
-  past_projects:
-    project:
-      - title: This is a title
-      - description: This is a description
-      - image: /img/nclouds-logo.png
+past_projects:
+  project:
+    - title: This is a title
+    - description: This is a description
+    - image: /img/nclouds-logo.png
 ---
 

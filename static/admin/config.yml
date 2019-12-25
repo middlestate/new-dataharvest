@@ -70,24 +70,14 @@ collections:
                 {label: Banner Text, name: banner_text, widget: string}
               ]
             }
-          - label: Past Projects Section
-            name: past_projects_section
-            widget: object
+          - label: Past Projects
+            name: past_projects
+            widget: list
             fields:
-              - label: Past Projects
-                name: past_projects
-                widget: list
+              - label: Project
+                name: project
+                widget: object
                 fields:
-                  - label: Project
-                    name: project
-                    widget: object
-                    fields:
-                      - label: Title
-                        name: title
-                        widget: string
-                      - label: Description
-                        name: description
-                        widget: text
-                      - label: Image
-                        name: image
-                        widget: image
+                  - {label: Title name: title widget: string}
+                  - {label: Description name: description widget: text}
+                  - {label: Image name: image widget: image}
