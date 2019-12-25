@@ -6,9 +6,10 @@ import Hero from '../components/Sections/Hero'
 import Affiliates from '../components/Sections/Affiliates'
 import Mission from '../components/Sections/Mission'
 import CurrentProjects from '../components/Sections/CurrentProjects'
+import PastProjects from '../components/Sections/PastProjects'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text, past_projects }) => (
   <div className="homepage">
     <Hero 
       background_image={background_image}
@@ -34,6 +35,7 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       button_link={spotlight_button_link}
       banner_text={banner_text}
     />
+    <PastProjects gridItems={past_projects} />
   </div>
 )
 
@@ -61,6 +63,7 @@ const IndexPage = ({ data }) => {
         spotlight_button_text={frontmatter.current_projects.spotlight_project.button_text}
         spotlight_button_link={frontmatter.current_projects.spotlight_project.button_link}
         banner_text={frontmatter.current_projects.banner_text}
+        past_projects={frontmatter.past_projects}
       />
     </Layout>
   )
@@ -87,6 +90,7 @@ IndexPageTemplate.propTypes = {
   spotlight_button_text: PropTypes.string,
   spotlight_button_link: PropTypes.string,
   banner_text: PropTypes.string,
+  past_projects: PropTypes.array,
 }
 
 IndexPage.propTypes = {
@@ -135,6 +139,14 @@ export const pageQuery = graphql`
             button_link
           }
           banner_text
+        }
+
+        past_projects {
+          project {
+            description
+            image
+            title
+          }
         }
 
 

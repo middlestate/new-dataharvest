@@ -7,6 +7,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entryImages = entry.getIn(['data', 'affiliate_logos', 'images'])
   const images = entryImages ? entryImages.toJS() : []
 
+  const entryProjects = entry.getIn(['data', 'past_projects', 'project'])
+  const project = entryProjects ? entryProjects.toJS() : []
+
   if (data) {
     return (
       <IndexPageTemplate
@@ -28,6 +31,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         spotlight_button_text={data.current_projects.spotlight_project.button_text}
         spotlight_button_link={data.current_projects.spotlight_project.button_link}
         banner_text={data.current_projects.banner_text}
+        past_projects={{ project }}
       />
     )
   } else {
