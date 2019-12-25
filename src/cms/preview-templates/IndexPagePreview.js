@@ -7,7 +7,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entryImages = entry.getIn(['data', 'affiliate_logos', 'images'])
   const images = entryImages ? entryImages.toJS() : []
 
-  const entryProjects = entry.getIn(['data', 'past_projects', 'project'])
+  const entryProjects = entry.getIn(['data', 'past_projects'])
   const project = entryProjects ? entryProjects.toJS() : []
 
   if (data) {
