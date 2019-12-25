@@ -125,7 +125,6 @@ export const pageQuery = graphql`
         current_projects {
           subtitle
           title
-
           spotlight_project {
             side_image
             logo
@@ -135,9 +134,7 @@ export const pageQuery = graphql`
             button_text
             button_link
           }
-
           banner_text
-
         }
 
 
