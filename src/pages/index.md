@@ -30,8 +30,8 @@ current_projects:
   banner_text: Helping suppliers manage their second most valuable asset… their data!
 past_projects:
   - project:
-      title: This is a title
-      description: This is a description
-      image: /img/nclouds-logo.png
+      title: 2014 – Accipter Project
+      description: Project Focusing On Emerging UAV Technologies, IoT Platforms, Multispectral Imaging, Machine Learning, And Automation.
+      image: /img/Accipter_Project.jpg
 ---
 
