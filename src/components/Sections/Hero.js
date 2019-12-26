@@ -8,13 +8,7 @@ class Hero extends React.Component {
 
   render() {
     return (
-      <section className="Hero section" style={
-        {
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          height: '100vh'
-        }
-      }>
+      <section className="Hero section">
         <div className='hero-video' style={{bottom: 'inherit'}}>
           <div className='is-hidden-mobile'>
             <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
