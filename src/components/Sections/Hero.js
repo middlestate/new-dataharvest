@@ -10,12 +10,18 @@ class Hero extends React.Component {
     return (
       <section className="Hero section" style={
         {
-          background: `url(${this.props.background_image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           height: '100vh'
         }
       }>
+        <div className='hero-video' style={{bottom: 'inherit'}}>
+          <div className='is-hidden-mobile'>
+            <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
+              <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
+            </video>
+          </div>
+        </div>
         <img src={this.props.image} className="dataharvest-logo" alt="dataharvest_logo" />
         <div className="title-container">
           <h1 className="title">{this.props.title}</h1>
@@ -28,7 +34,7 @@ class Hero extends React.Component {
 }
 
 Hero.propTypes = {
-  background_image: PropTypes.string,
+  // background_image: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,

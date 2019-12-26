@@ -12,7 +12,7 @@ import Layout from '../components/Layout'
 export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text, past_projects }) => (
   <div className="homepage">
     <Hero 
-      background_image={background_image}
+      // background_image={background_image}
       title={title}
       subtitle={subtitle}
       image={image}
@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        background_image={frontmatter.hero.background_image}
+        // background_image={frontmatter.hero.background_image}
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         image={frontmatter.hero.image}
@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
 }
 
 IndexPageTemplate.propTypes = {
-  background_image: PropTypes.string,
+  // background_image: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
@@ -108,7 +108,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         hero {
-          background_image
+
           title
           subtitle
           image
