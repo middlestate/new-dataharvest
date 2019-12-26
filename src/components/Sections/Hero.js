@@ -8,13 +8,11 @@ class Hero extends React.Component {
 
   render() {
     return (
-      <section className="Hero section">
+      <section className="hero section">
         <div className='hero-video' style={{bottom: 'inherit'}}>
-          <div className='is-hidden-mobile'>
-            <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
-              <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
-            </video>
-          </div>
+          <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
+            <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
+          </video>
         </div>
         <img src={this.props.image} className="dataharvest-logo" alt="dataharvest_logo" />
         <div className="title-container">
