@@ -8,7 +8,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const images = entryImages ? entryImages.toJS() : []
 
   const entryProjects = entry.getIn(['data', 'past_projects_section' ,'past_projects'])
-  const projects = entryProjects ? entryProjects.toJS() : []
+  const past_projects = entryProjects ? entryProjects.toJS() : []
 
   if (data) {
     return (
@@ -31,7 +31,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         spotlight_button_text={data.current_projects.spotlight_project.button_text}
         spotlight_button_link={data.current_projects.spotlight_project.button_link}
         banner_text={data.current_projects.banner_text}
-        past_projects_section={{ projects }}
+        past_projects_section={{ past_projects }}
       />
     )
   } else {
