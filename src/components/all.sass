@@ -166,13 +166,25 @@
       border: transparent
       border-radius: 2px
 
-.past_project_description
+/* Past Projects */
+.past_projects_section
+  background-color: lightgray
   font-size: 18px
   font-family: "Noto Serif", serif
   color: #73777F
-  margin-top: 10px
-
-
+  .project_container
+    padding: 2%
+    .column-1, .column-2
+      background-color: white
+      margin: 15px
+    .column-1
+      background-color: lightgray
+    .column-2
+      padding: 50px 50px 20% 50px
+      max-width: -webkit-fill-available
+    .past_project_title
+      font-size: 32px
+      color: #142850
 
 
 
@@ -210,6 +222,13 @@
       .column-2
         .spotlight_title
           width: 100%
+
+  .past_projects_section
+    padding: 0 10% 5% 10%
+    .project_container
+      display: block
+      .column-2
+        width: 100%
 
 @media only screen and (min-width: 200px) and (max-width: 767px)
   .hero
@@ -275,25 +294,12 @@
       .column-1, .column-2
         width: 100%
 
-  /* Past Projects */
   .past_projects_section
     padding: 0 20% 5% 20%
-    background-color: lightgray
     .project_container
       display: flex
-      padding: 2%
-      .column-1, .column-2
-        background-color: white
-        margin: 15px
-      .column-1
-        background-color: lightgray
       .column-2
-        padding: 50px 50px 20% 50px
-        max-width: -webkit-fill-available
         width: 75%
-      .past_project_title
-        font-size: 32px
-        color: #142850
 
 @media only screen and (min-width: 1024px)
   .hero
