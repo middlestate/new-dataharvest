@@ -7,7 +7,7 @@ const PastProjects = ({ gridItems }) => {
       {gridItems.map(({ project }, keys) => {
         return (
           <div key={keys} className="project_container">
-            {console.log(project)}
+            {console.log(gridItems)}
             <div className="column-1">
               <img src={project.image} alt="project_image" />
             </div>
@@ -24,7 +24,11 @@ const PastProjects = ({ gridItems }) => {
 
 PastProjects.propTypes = {
   past_projects: PropTypes.shape({
-    project: PropTypes.object
+    project: PropTypes.shape({
+      image: PropTypes.string,
+      title: PropTypes.string,
+      description: PropTypes.string,
+    })
   })
 }
 
