@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const PastProjects = ({ gridItems }) => {
   return (
     <div className="past_projects_section">
-      {gridItems.map(({ project }, keys) => {
+      {gridItems.map(({ project = {image: '', title: '', description: ''} }, keys) => {
         return (
           <div key={keys} className="project_container">
             {console.log(gridItems)}
