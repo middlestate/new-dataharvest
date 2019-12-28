@@ -84,9 +84,5 @@ past_projects_section:
           economy of the future.
         image: /img/scanning-1.jpg
         title: 2019 – PureChex
-    - project:
-        description: Description for another project goes here.
-        image: /img/laptop-coding.png
-        title: This is another project
 ---
 
