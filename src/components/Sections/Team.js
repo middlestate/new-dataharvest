@@ -3,13 +3,7 @@ import PropTypes from 'prop-types'
 
 const Team = ({ gridItems }) => {
   return (
-    <div className="team_section" style={
-      {
-        backgroundImage: 'url(/img/Avos.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center'
-      }
-    }>
+    <div className="team_section">
       <h1 className="title" style={{color: 'black'}}>Meet Our Team</h1>
       {gridItems.map(({ member = {name: '', icon: '', title: '', description: ''} }, keys) => {
         return (
