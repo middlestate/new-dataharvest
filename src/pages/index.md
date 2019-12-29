@@ -87,9 +87,35 @@ past_projects_section:
 team_section:
   team:
     - member:
-        name: Mark Buhl
+        description: >-
+          International supply chain consultant, commercial trial expert,
+          international trade and industry advisor, traceability platform
+          developer, IoT expert, on farm network specialist.
         icon: /img/laptop-coding.png
+        name: Mark Buhl
         title: Co-Founder
-        description: International supply chain consultant, commercial trial expert, international trade and industry advisor, traceability platform developer, IoT expert, on farm network specialist.
+    - member:
+        description: >-
+          Big data specialist, blockchain platform expert, cryptocurrency and
+          traceability platform developer.  
+        icon: /img/laptop-coding.png
+        name: Ryan Clark
+        title: Co-Founder
+    - member:
+        description: >-
+          International supply, global claims, license custom broker, project
+          management and implementation, global logistics, grower and import
+          accounting.  
+        icon: /img/laptop-coding.png
+        name: ' Lorena Dominguez'
+        title: Associate
+    - member:
+        description: >-
+          Packaging development, recyclability expert, irrigation specialist,
+          post-harvest consultant, global trade, logistics, IoT sensor
+          development.
+        icon: /img/laptop-coding.png
+        name: Felipe Illanes
+        title: Associate
 ---
 
