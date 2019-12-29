@@ -84,5 +84,14 @@ past_projects_section:
           economy of the future.
         image: /img/scanning-1.jpg
         title: 2019 – PureChex
+team_section:
+  title: Meet Our Team
+  background_image: /img/Avos.jpg
+  team:
+    - member:
+        name: Mark Buhl
+        icon: /img/laptop-coding.png
+        title: Co-Founder
+        description: International supply chain consultant, commercial trial expert, international trade and industry advisor, traceability platform developer, IoT expert, on farm network specialist.
 ---
 

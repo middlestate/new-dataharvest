@@ -85,3 +85,22 @@ collections:
                 - {label: Title, name: title, widget: string}
                 - {label: Description, name: description, widget: text}
                 - {label: Image, name: image, widget: image}
+          - label: Team Section
+            name: team_section
+            widget: object
+            fields:
+            - {label: Title, name: title, widget: string}
+            - {label: Background Image, name: background_image, widget: image}
+            - label: Team
+              name: team
+              widget: list
+              fields:
+              - label: Team Member
+                name: member
+                widget: object
+                fields:
+                - {label: Name, name: name, widget: string}
+                - {label: Icon, name: icon, widget: image}
+                - {label: Title, name: title, widget: string}
+                - {label: Description, name: description, widget: text}
+
