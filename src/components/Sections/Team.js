@@ -5,17 +5,18 @@ const Team = ({ gridItems }) => {
   return (
     <div className="team_section">
       <h1 className="title" style={{color: 'black'}}>Meet Our Team</h1>
-      {gridItems.map(({ member = {name: '', icon: '', title: '', description: ''} }, keys) => {
-        return (
-          <div key={keys} className="member_container">
-            {console.log(gridItems)}
-            <h2 className="name">{member.name}</h2>
-            <img src={member.icon} className="icon" alt="icon" />
-            <h3 className="title">{member.title}</h3>
-            <p className="description">{member.description}</p>
-          </div>
-        )
-      })}
+      <div className="member_container">
+        {gridItems.map(({ member = {name: '', icon: '', title: '', description: ''} }, keys) => {
+          return (
+            <div key={keys} className="member">
+              <h2 className="name">{member.name}</h2>
+              <img src={member.icon} className="icon" alt="icon" />
+              <h3 className="title">{member.title}</h3>
+              <p className="description">{member.description}</p>
+            </div>
+          )
+        })}      
+      </div>
     </div>
   )
 }
