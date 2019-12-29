@@ -7,9 +7,10 @@ import Affiliates from '../components/Sections/Affiliates'
 import Mission from '../components/Sections/Mission'
 import CurrentProjects from '../components/Sections/CurrentProjects'
 import PastProjects from '../components/Sections/PastProjects'
+import Team from '../components/Sections/Team'
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text, past_projects_section }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, image, affiliate_logos, mission_title, mission_statement, mission_image, current_projects_subtitle, current_projects_title, side_image, spotlight_logo, spotlight_title, spotlight_subtitle, spotlight_description, spotlight_button_text, spotlight_button_link, banner_text, past_projects_section, team_section }) => (
   <div className="homepage">
     <Hero 
       // background_image={background_image}
@@ -36,6 +37,9 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       banner_text={banner_text}
     />
     <PastProjects gridItems={past_projects_section.past_projects} />
+    <Team
+      gridItems={team_section.team}
+    />
   </div>
 )
 
@@ -64,6 +68,7 @@ const IndexPage = ({ data }) => {
         spotlight_button_link={frontmatter.current_projects.spotlight_project.button_link}
         banner_text={frontmatter.current_projects.banner_text}
         past_projects_section={frontmatter.past_projects_section}
+        team_section={frontmatter.team_section}
       />
     </Layout>
   )
@@ -92,7 +97,10 @@ IndexPageTemplate.propTypes = {
   banner_text: PropTypes.string,
   past_projects_section: PropTypes.shape({
     past_projects: PropTypes.array,
-  })
+  }),
+  team_section: PropTypes.shape({
+    team: PropTypes.array,
+  }),
 }
 
 IndexPage.propTypes = {
@@ -153,6 +161,16 @@ export const pageQuery = graphql`
           }          
         }
 
+        team_section {
+          team {
+            member {
+              name
+              icon
+              title
+              description              
+            }
+          }
+        }
 
 
       }

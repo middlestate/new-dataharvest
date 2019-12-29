@@ -89,8 +89,6 @@ collections:
             name: team_section
             widget: object
             fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Background Image, name: background_image, widget: image}
             - label: Team
               name: team
               widget: list

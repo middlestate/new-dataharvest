@@ -85,8 +85,6 @@ past_projects_section:
         image: /img/scanning-1.jpg
         title: 2019 – PureChex
 team_section:
-  title: Meet Our Team
-  background_image: /img/Avos.jpg
   team:
     - member:
         name: Mark Buhl
