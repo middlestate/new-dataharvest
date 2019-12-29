@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Team = ({ gridItems }) => {
   return (
     <div className="team_section">
-      <h1 className="title" style={{color: 'black'}}>Meet Our Team</h1>
+      <h1 className="section_title" style={{color: 'black'}}>Meet Our Team</h1>
       <div className="member_container">
         {gridItems.map(({ member = {name: '', icon: '', title: '', description: ''} }, keys) => {
           return (
