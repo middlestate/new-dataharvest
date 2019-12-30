@@ -5,6 +5,12 @@ import Footer from '../components/Footer'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faFacebookSquare, faLinkedin)
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
