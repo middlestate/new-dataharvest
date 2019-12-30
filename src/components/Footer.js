@@ -5,6 +5,8 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer>
+        <button>Get In Touch</button>
+        <div className="links_container"></div>
       </footer>
     )
   }
