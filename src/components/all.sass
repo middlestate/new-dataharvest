@@ -209,9 +209,7 @@
     justify-content: center
     .member
       padding: 5%
-      margin: 10px
-      flex: 25% 
-      max-width: 25%      
+      margin: 10px  
       background-color: white
       .name, .title
         padding: 10px
@@ -275,6 +273,10 @@
       .column-2
         width: 100%
 
+  .member
+    flex: 25% 
+    max-width: 23%    
+
 @media only screen and (min-width: 200px) and (max-width: 767px)
   .hero
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../../static/img/hero_image_background.png')
@@ -291,6 +293,19 @@
 
   .banner_text
     font-size: 22px
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px)  
+  .member
+    flex: 50% 
+    max-width: 50% 
+   
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px)  
+  .member
+    flex: 100% 
+    max-width: 100% 
+    
 
   /* Responsive layout - makes a single column with logos stacked */
 @media screen and (max-width: 767px)  
@@ -346,6 +361,10 @@
       .column-2
         width: 75%
 
+  .member
+    flex: 50% 
+    max-width: 46%   
+
 @media only screen and (min-width: 1024px)
   .hero
     padding-bottom: 10%
@@ -359,3 +378,7 @@
   .current_projects
     .banner_text
       font-size: 32px
+
+  .member
+    flex: 25% 
+    max-width: 23%   
