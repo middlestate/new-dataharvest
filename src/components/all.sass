@@ -240,11 +240,11 @@
 footer
   height: 50vh
   background-color: #737780
-  a
+  .button_link
     position: relative
     top: 30%
     display: block
-  a > button
+  .button_link > button
     display: block
     margin: 0 auto
     background-color: #78A27C
@@ -263,7 +263,17 @@ footer
     cursor: pointer      
     background-color: #162752
     color: white
-
+  .links_container
+    position: relative
+    top: 50%
+    display: block
+    text-align: center
+    .link_icon
+      color: #16191E
+      transition: 0.5s
+  .link_icon:hover
+    color: #5DBCD2
+    cursor: pointer
 
 
 /* media queries */
@@ -304,7 +314,10 @@ footer
 
   .member
     flex: 25% 
-    max-width: 23%    
+    max-width: 23%  
+
+  .link_icon
+    padding: 20px
 
 @media only screen and (min-width: 200px) and (max-width: 767px)
   .hero
@@ -322,6 +335,9 @@ footer
 
   .banner_text
     font-size: 22px
+
+  .link_icon
+    padding: 5px 150px
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px)  
