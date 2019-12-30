@@ -7,7 +7,6 @@ const PastProjects = ({ gridItems }) => {
       {gridItems.map(({ project = {image: '', title: '', description: ''} }, keys) => {
         return (
           <div key={keys} className="project_container">
-            {console.log(gridItems)}
             <div className="column-1">
               <img src={project.image} alt="project_image" />
             </div>
