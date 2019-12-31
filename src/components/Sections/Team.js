@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Team = ({ gridItems }) => {
   return (
     <div className="team_section">
-      <h1 className="section_title" style={{color: 'black'}}>Meet Our Team</h1>
+      <h1 className="section_title">Meet Our Team</h1>
       <div className="member_container">
         {gridItems.map(({ member = {name: '', linkedin_link: '', title: '', description: ''} }, keys) => {
           return (
