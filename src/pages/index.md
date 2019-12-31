@@ -91,14 +91,14 @@ team_section:
           International supply chain consultant, commercial trial expert,
           international trade and industry advisor, traceability platform
           developer, IoT expert, on farm network specialist.
-        icon: /img/laptop-coding.png
+        linkedin_link: https://www.linkedin.com/in/joseph-mark-buhl-884baa62/
         name: Mark Buhl
         title: Co-Founder
     - member:
         description: >-
           Big data specialist, blockchain platform expert, cryptocurrency and
           traceability platform developer.  
-        icon: /img/laptop-coding.png
+        linkedin_link: https://www.linkedin.com/in/ryandclark/
         name: Ryan Clark
         title: Co-Founder
     - member:
@@ -106,7 +106,7 @@ team_section:
           International supply, global claims, license custom broker, project
           management and implementation, global logistics, grower and import
           accounting.  
-        icon: /img/laptop-coding.png
+        linkedin_link: https://www.linkedin.com/in/lorena-d-502104170/
         name: ' Lorena Dominguez'
         title: Associate
     - member:
@@ -114,7 +114,7 @@ team_section:
           Packaging development, recyclability expert, irrigation specialist,
           post-harvest consultant, global trade, logistics, IoT sensor
           development.
-        icon: /img/laptop-coding.png
+        linkedin_link: https://www.linkedin.com/in/felipe-illanes/
         name: Felipe Illanes
         title: Associate
 ---

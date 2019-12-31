@@ -98,7 +98,7 @@ collections:
                 widget: object
                 fields:
                 - {label: Name, name: name, widget: string}
-                - {label: Icon, name: icon, widget: image}
+                - {label: LinkedIn Link, name: linkedin_link, widget: string}
                 - {label: Title, name: title, widget: string}
                 - {label: Description, name: description, widget: text}
 

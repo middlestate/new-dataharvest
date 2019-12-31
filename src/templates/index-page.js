@@ -18,7 +18,9 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       subtitle={subtitle}
       image={image}
     />
-    <Affiliates gridItems={affiliate_logos.images} />
+    <Affiliates
+      gridItems={affiliate_logos.images}
+    />
     <Mission
       title={mission_title}
       statement={mission_statement}
@@ -36,7 +38,9 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, image, af
       button_link={spotlight_button_link}
       banner_text={banner_text}
     />
-    <PastProjects gridItems={past_projects_section.past_projects} />
+    <PastProjects
+      gridItems={past_projects_section.past_projects}
+    />
     <Team
       gridItems={team_section.team}
     />
@@ -165,7 +169,7 @@ export const pageQuery = graphql`
           team {
             member {
               name
-              icon
+              linkedin_link
               title
               description              
             }
