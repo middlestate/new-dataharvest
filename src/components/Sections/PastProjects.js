@@ -6,7 +6,8 @@ const PastProjects = ({ gridItems }) => {
     <div className="past_projects_section">
       {gridItems.map(({ project = {image: '', title: '', description: ''} }, keys) => {
         return (
-          <div key={keys} className="project_container">
+          <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
+            {console.log(keys)}
             <div className="column-1">
               <img src={project.image} alt="project_image" />
             </div>
