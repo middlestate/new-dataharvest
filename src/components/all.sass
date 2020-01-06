@@ -22,14 +22,14 @@
       font-family: Aspira-Regular
 
 .hero-video video
-  position: relative
-  left: auto
-  top: auto
-  bottom: inherit !important
-  transform: none
-  width: 100vw
+  position: fixed
+  // left: auto
+  // top: auto
+  // bottom: inherit !important
+  // transform: none
+  // width: 100vw
   // background-size: cover
-  z-index: 2
+  z-index: -1
 
 .dataharvest-logo
   height: auto
@@ -76,6 +76,7 @@
 /* Mission Section */
 .mission
   align-items: center
+  background-color: white
   .column-1
     .title, .statement
       color: #73777f
@@ -299,7 +300,7 @@ footer
 
   .subtitle
     margin-left: 0
-    margin-top: 5% !important
+    padding-top: 5% !important
 
   .current_projects
     .subtitle
@@ -416,7 +417,7 @@ footer
   .mission
     display: flex
     max-width: 100%
-    margin: 5% 15% 5% 15%
+    padding: 5% 15% 5% 15%
     .column-1, .column-2
       width: 50%
     .column-1
