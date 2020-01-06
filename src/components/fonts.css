@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Gilroy-Light;
-  src: url(fonts/Gilroy-Light.otf) format("opentype");
-}
-
-@font-face {
   font-family: Gilroy-SemiBold;
   src: url(fonts/Gilroy-SemiBold.otf) format("opentype");
 }
@@ -11,4 +6,29 @@
 @font-face {
   font-family: Aspira-Regular;
   src: url(fonts/Aspira-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Stem-Regular;
+  src: url(fonts/Stem-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Central-Light;
+  src: url(fonts/Central-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: KometaUnicase-Bld;
+  src: url(fonts/KometaUnicase-Bld.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Axiform-Medium;
+  src: url(fonts/Axiforma-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: UmbaSans-Light;
+  src: url(fonts/UmbaSans-Light.ttf) format("truetype");
 }

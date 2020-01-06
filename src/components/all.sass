@@ -82,6 +82,8 @@
     .title
       font-weight: bolder
       margin-left: 0
+    .statement
+      font-family: Stem-Regular
   .column-2
     img
       max-width: 50%
@@ -91,26 +93,27 @@
 
 /* Current Projects Section */
 .current_projects
-  background-color: lightgray
+  background-color: #F0F1F3
   padding-bottom: 5%
   .subtitle, .title
     text-align: center
   .subtitle
     color: #73777f
-    font-family: Montserrat, sans-serif
+    font-family: Central-Light
     font-size: 18px
     text-transform: uppercase
     padding: 5% 5% 0 5%
   .title
     color: #191b21
-    font-family: Montserrat, sans-serif
+    font-family: KometaUnicase-Bld
     text-transform: uppercase
   .banner_text
     text-align: center
-    margin: 10px 5px 10px 5px
+    margin: 25px 5px 10px 5px
     padding: 1%
     color: #191b21
     font-weight: 600
+    font-family: Axiform-Medium
     background-color: #78A27C
 .spotlight_project
   width: 80%
@@ -143,6 +146,7 @@
       color: #ffffff
       font-size: 18px
       font-weight: 400
+      font-family: Stem-Regular
     .description
       color: #ffffff
       font-size: 20px
@@ -185,6 +189,7 @@
     .past_project_title
       color: #142850
       padding-bottom: 20px
+      font-family: Axiform-Medium
 
 
 /* Team Section */
@@ -197,7 +202,7 @@
     color: #1A233F
     text-align: center
     padding: 10% 10% 5% 10%
-    // font-family: Aspira-Regular
+    font-family: UmbaSans-Light
     font-weight: normal
   .member_container
     display: flex 
@@ -360,22 +365,6 @@ footer
     padding: 5px 50px
 
 @media only screen and (min-width: 600px)
-  .current_projects
-    .title
-      font-size: 40px
-      margin-left: 5%
-    .banner_text
-      font-size: 27px
-    .spotlight_project
-      display: flex
-      margin: 0 auto
-      width: 80%
-      padding: 0
-      .column-1, .column-2
-        width: 100%
-      .column-1
-        height: auto
-
   .past_projects_section
     .project_container
       .column-2
@@ -434,6 +423,22 @@ footer
       .title, .statement
         font-size: 26px
 
+  .current_projects
+    .title
+      font-size: 40px
+      margin-left: 5%
+    .banner_text
+      font-size: 27px
+    .spotlight_project
+      display: flex
+      margin: 0 auto
+      width: 80%
+      padding: 0
+      .column-1, .column-2
+        width: 100%
+      .column-1
+        height: auto
+
   .past_projects_section
     padding: 0 20% 5% 20%
     .project_container
@@ -460,6 +465,8 @@ footer
     margin-left: 5%
 
   .current_projects
+    .spotlight_project
+      width: 90%
     .banner_text
       font-size: 32px
 
