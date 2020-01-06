@@ -10,7 +10,7 @@ class Hero extends React.Component {
     return (
       <section className="hero section">
         <div className='hero-video' style={{bottom: 'inherit'}}>
-          <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}} height='100vh'>
+          <video playsInline autoPlay muted loop poster='/static/img/hero_image_background.png' style={{zIndex: -100}} height='100vh'>
             <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
           </video>
         </div>
